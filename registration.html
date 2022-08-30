@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Header-->
+      <nav>
+        <img src="assets/logo.jpg" alt="" class="logo" />
+        <ul>
+          <li>
+            <a href="home.html">HOME</a>
+          </li>
+          <li>
+            <a href="project.html">PROJECTS</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="content">
+      <h1 id="title">Survey Form</h1>
+    <!--Form from here-->
+    <div id="bg">
+      <form id="survey-form">
+        <!--name-->
+        <label for="name">Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Your name"
+          minlength="4"
+          maxlength="30"
+          required
+        /><br /><br />
+        <!--email-->
+        <label for="email">Email</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email, example@email.com"
+          required
+          pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+        /><br /><br />
+        <!--pswd-->
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+          minlength="6"
+          maxlength="15"
+          required
+        />
+        <br /><br />
+        <!--dob-->
+        <label for="dob">Date of Birth </label><br />
+        <input type="date" id="dob" name="dob" />
+        <br /><br />
+        <!--t&c-->
+        <input type="checkbox" id="acceptTerms" name="acceptTerms" />
+        <label for="acceptTerms">I have accepted the terms and conditions.</label>
+        <br /><br />
+        <!--submit button-->
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+  </div>
+    <div id="user-entry">
+    <h2>User Entries Here</h2>
+    <div id="output">
+      <!--Display User's Data Here-->
+    </div>
+    <script src="script.js"></script>
+    </div>
+  </div>
+  </body>
+</html>
